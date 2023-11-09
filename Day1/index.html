@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Day1</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted>
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+        <div class="text">
+            Every Day CSS
+        </div>
+        <div class="footer">
+            <h3>Change Value of mix-blend-mode property</h3>
+            <div class="toggles">
+                <button onclick="changeBlendMode('Multiply')">Screen</button>
+                <button onclick="changeBlendMode('color-burn')">color-burn</button>
+                <button onclick="changeBlendMode('exclusion')">exclusion</button>
+                <button onclick="changeBlendMode('difference')">difference</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
