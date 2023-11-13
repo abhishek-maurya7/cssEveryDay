@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: purple;
+    color: #fcf1c0;
+}
+
+.diya {
+    background-color: #f6950e;
+    height: 150px;
+    width: 300px;
+    border-radius: 0 0 150px 150px;
+}
+
+.flame-container {
+    width: 300px;
+    height: 60px;
+    background-color: #fd500a;
+    margin-bottom: -32px;
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.flame-highlight {
+    width: 170px;
+    height: 170px;
+    background-color: #fcf1c0;
+    border-radius: 160px 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -145px; 
+    left: 60px;
+    opacity: 0.8;
+}
+
+.flame {
+    width: 120px;
+    height: 120px;
+    background-color: #f3c631;
+    border-radius: 160px 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation: flameAnimation 1.8s ease-in-out infinite;
+}
+
+@keyframes flameAnimation {
+    0% {
+        width: 120px;
+    }
+
+    50% {
+        width: 100px;
+    }
+    
+    100% {
+        width: 120px;
+    }
+}
+
